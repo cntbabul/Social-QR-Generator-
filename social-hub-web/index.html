@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+
+    <div class="container">
+        <div class="card fade-in">
+            <div class="profile-header">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1 id="userName">User Name</h1>
+                <p id="userMessage">Check out my links below!</p>
+            </div>
+            
+            <div id="linksContainer" class="links-grid">
+                <!-- Links will be injected here by JS -->
+            </div>
+
+            <div class="qr-cta">
+                <p>Scanned via <span class="brand">SocialQR</span></p>
+                <button onclick="shareProfile()">Share Profile <i class="fas fa-share-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
