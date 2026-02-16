@@ -65,7 +65,6 @@
           "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos."
         }
       ],
-      "./plugins/withAndroidBuildOptimizations.js"
     ],
     "experiments": {
       "typedRoutes": true,
