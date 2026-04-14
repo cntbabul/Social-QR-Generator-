@@ -2,14 +2,14 @@
   "expo": {
     "name": "qr-code-generator",
     "slug": "qr-code-generator",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "qrcodegenerator",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "social.qr"
     },
     "android": {
       "adaptiveIcon": {
@@ -18,7 +18,6 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "permissions": [
         "android.permission.CAMERA",
@@ -30,7 +29,8 @@
         "android.permission.READ_MEDIA_VIDEO",
         "android.permission.READ_MEDIA_AUDIO"
       ],
-      "package": "social.qr"
+      "package": "social.qr",
+      "minSdkVersion": 24
     },
     "web": {
       "output": "static",
@@ -64,7 +64,7 @@
           "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
           "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos."
         }
-      ],
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

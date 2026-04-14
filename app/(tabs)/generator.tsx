@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     headerContainer: {
         alignItems: 'center',
         marginBottom: 24,
-        marginTop: 10,
+        marginTop: 5,
     },
     titleGradient: {
         paddingHorizontal: 24,
