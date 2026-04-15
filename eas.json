@@ -8,7 +8,6 @@
       "developmentClient": true,
       "distribution": "internal"
     },
-
     "production": {
       "env": {
         "NODE_ENV": "production"
