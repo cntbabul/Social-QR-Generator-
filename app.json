@@ -2,7 +2,7 @@
   "expo": {
     "name": "Social QR Generator",
     "slug": "social-qr-generator",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "qrcodegenerator",
@@ -29,7 +29,8 @@
         "android.permission.READ_MEDIA_VIDEO",
         "android.permission.READ_MEDIA_AUDIO"
       ],
-      "package": "social.qr"
+      "package": "social.qr",
+      "versionCode": 5
     },
     "web": {
       "output": "static",
