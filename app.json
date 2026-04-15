@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "qr-code-generator",
-    "slug": "qr-code-generator",
-    "version": "1.0.2",
+    "name": "Social QR Generator",
+    "slug": "social-qr-generator",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "qrcodegenerator",
@@ -72,8 +72,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "eccf06dd-086b-44d7-a4a9-4da7f1ef6ccb"
+        "projectId": "ab4d9d6b-7e8e-4975-8f82-02a47130e192"
       }
-    }
+    },
+    "owner": "cntbabul"
   }
 }

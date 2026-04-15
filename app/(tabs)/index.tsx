@@ -16,7 +16,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { TABS } from '@/components/social/social-config';
 import { useSocialQR } from '@/components/social/useSocialQR';
 import { PlatformPage } from '@/components/social/PlatformPage';
-import { SocialMode } from '@/components/social/types';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -29,23 +28,23 @@ export default function SocialScreen() {
     const tabScrollRef = useRef<ScrollView>(null);
 
     // Business Logic Hook
-    const { 
-        fields, 
-        qrValues, 
-        captureRefs, 
-        qrRefs, 
-        updateField, 
-        generateQR, 
-        saveToGallery, 
-        downloadQRCode 
+    const {
+        fields,
+        qrValues,
+        captureRefs,
+        qrRefs,
+        updateField,
+        generateQR,
+        saveToGallery,
+        downloadQRCode
     } = useSocialQR();
 
     const handleTabPress = useCallback((index: number) => {
         setActiveIndex(index);
-        
+
         // Scroll the horizontal paging ScrollView to the selected page
         pagerRef.current?.scrollTo({ x: index * SCREEN_WIDTH, animated: true });
-        
+
         // Scroll the tab bar to keep the selected tab visible
         tabScrollRef.current?.scrollTo({
             x: Math.max(0, index * 100 - SCREEN_WIDTH / 2 + 60),
@@ -72,7 +71,7 @@ export default function SocialScreen() {
                 style={StyleSheet.absoluteFill}
             />
             <StatusBar barStyle="light-content" />
-            
+
             <SafeAreaView style={{ flex: 1 }}>
                 {/* Header Section */}
                 <View style={styles.headerContainer}>
@@ -135,7 +134,7 @@ export default function SocialScreen() {
                     scrollEventThrottle={16}
                 >
                     {TABS.map((tab) => (
-                        <PlatformPage 
+                        <PlatformPage
                             key={tab.id}
                             config={tab}
                             fields={(fields as any)[tab.id] || {}}

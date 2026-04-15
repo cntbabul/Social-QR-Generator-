@@ -99,10 +99,6 @@ Generate QR codes for multiple platforms:
 - **[@react-native-async-storage/async-storage](https://react-native-async-storage.github.io/async-storage/)** `2.2.0` - Local storage
 - **[@react-native-picker/picker](https://github.com/react-native-picker/picker)** `2.11.1` - Native picker component
 
-### **Advanced Features**
-- **[@shopify/react-native-skia](https://shopify.github.io/react-native-skia/)** `2.2.12` - High-performance graphics
-- **[React Native Worklets](https://github.com/margelo/react-native-worklets-core)** `0.5.1` - JavaScript worklets
-
 ### **Build & Development**
 - **[EAS Build](https://docs.expo.dev/build/introduction/)** - Cloud-based app building
 - **[Expo Dev Client](https://docs.expo.dev/develop/development-builds/introduction/)** `~6.0.20` - Custom development client
